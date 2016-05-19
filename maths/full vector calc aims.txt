@@ -1,0 +1,50 @@
+Modulus
+Unit vector
+Internal & External Division 
+scalar product
+vector product
+scalar triple product
+vector triple product
+Angle between two lines
+Equations of a line, plane,
+Distances: l-l, pt-l, pt-p,l -p, p-p 
+
+
+3:
+
+x = lxi + kx2
+    ---------
+	   l + k
+	   
+y = ly1 + ky2
+    ---------
+	  l + k
+
+	  def vtp(a,b,c,d,e,f):
+	      i_comp = ((a2*b3)-(a3*b2))
+          raw_j_comp = ((a1*b3)-(a3*b1))
+          raw_k_comp = ((a1*b2)-(a2*b1))
+
+
+          if raw_k_comp > 0:
+              k_comp = "+%d" %(raw_k_comp)
+          else:
+              k_comp = raw_k_comp
+
+          if raw_j_comp < 0:
+              raw_j_comp = (raw_j_comp *(-1))
+              j_comp = "+%d" %(raw_j_comp)
+          else:
+              j_comp = "-%d" %(raw_j_comp)
+          return "%di %sj %sk" %(i_comp,j_comp,k_comp)
+
+
+
+
+
+
+
+
+
+
+
